@@ -1,0 +1,15 @@
+$site-color-1: #849d8f;
+$site-color-2: #8996a6;
+$site-color-3: #9d8b84;
+
+#slide-1:checked ~ .site-wrapper {
+	background-color: $site-color-1;
+}
+
+#slide-2:checked ~ .site-wrapper {
+	background-color: $site-color-2;
+}
+
+#slide-3:checked ~ .site-wrapper {
+	background-color: $site-color-3;
+}

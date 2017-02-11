@@ -1,0 +1,8 @@
+#slide-1:checked ~ .site-wrapper {
+  background-color: #849d8f; }
+
+#slide-2:checked ~ .site-wrapper {
+  background-color: #8996a6; }
+
+#slide-3:checked ~ .site-wrapper {
+  background-color: #9d8b84; }
