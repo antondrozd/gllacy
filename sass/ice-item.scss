@@ -1,0 +1,70 @@
+.ice-item {
+	display: inline-block;
+	width: 23.26%;
+	margin-right: 2.32%;
+	box-sizing: border-box;
+	padding: 10px;
+	vertical-align: top;
+	text-align: center;
+	color: #ffffff;
+	transition: all .2s;
+	&--hit {
+		position: relative;
+		&::before {
+			content: "ХИТ";
+			position: absolute;
+			width: 60px;
+			height: 60px;
+			box-sizing: border-box;
+			padding-bottom: 15px;
+			font-family: "Highliner", sans-serif;
+			font-size: 60px;
+			line-height: 60px;
+			text-align: center;
+			color: #1d1d1d;
+			background-color: #ffffff;
+			border-radius: 50%;
+		}
+	}
+	&:last-child {
+		margin-right: 0;
+	}
+	&:hover {
+		background-color: rgba(255, 255, 255, 0.3);
+		box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+		.ice-item__descr {
+			border-bottom: none;
+		}
+		.btn--fast-show {
+			opacity: 1;
+		}
+	}
+	img {
+		width: 100%;
+	}
+}
+
+.ice-item__price {
+	display: block;
+	margin-top: -60px;
+	margin-bottom: 20px;
+	font-size: 45px;
+	font-weight: bold;
+	line-height: 54px;
+	text-align: left;
+	text-shadow: 0 1px 3px rgba(49, 50, 53, 0.5);
+	cursor: default;
+	span {
+		font-size: 30px;
+	}
+}
+
+.ice-item__descr {
+	position: relative;
+	margin: 20px 0;
+	font-size: 16px;
+	line-height: 24px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+	cursor: default;
+}
+

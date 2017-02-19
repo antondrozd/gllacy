@@ -1,0 +1,35 @@
+.subscription {
+	position: relative;
+	float: right;
+	width: 48.84%;
+	min-height: 230px;
+	margin-bottom: 40px;
+	padding: 25px 20px;
+	box-sizing: border-box;
+	background: #f8f7f4;
+	border: 5px solid transparent;
+	border-image: url("../img/border-img.jpg");
+	border-image-slice: 5;
+	border-image-repeat: repeat;
+	border-radius: $border-radius;
+	p {
+		margin: 0;
+		font-size: 16px;
+		line-height: 22px;
+		color: #5a5a5a;
+	}
+}
+
+.subscription__form {
+	position: absolute;
+	bottom: 40px;
+	width: 100%;
+	min-width: 370px;
+}
+
+.subscription__email-input {
+	@include text-input;
+	display: inline-block;
+	width: 60%;
+	margin-right: 10px;
+}

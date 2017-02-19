@@ -1,0 +1,38 @@
+.social {
+	display: inline-block;
+	width: 25.58%;
+	vertical-align: top;
+	font-size: 0;
+}
+
+.social__btn {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	font-size: 0;
+	border: 4px solid #c2cec7;
+	border-radius: 50%;
+	transition: all .17s;
+	&:not(:last-child) {
+		margin-right: 12px;
+	}
+	&--tw {
+		background: url("../img/social-sprite.png") no-repeat;
+		background-position: -1px 0px;
+	}
+	&--inst {
+		background: url("../img/social-sprite.png") no-repeat;
+		background-position: -44px 0px;
+	}
+	&--fb {
+		background: url("../img/social-sprite.png") no-repeat;
+		background-position: -86px 0px;
+	}
+	&--vk {
+		background: url("../img/social-sprite.png") no-repeat;
+		background-position: -128px 0px;
+	}
+	&:hover {
+		transform: scale(1.13);
+	}
+}

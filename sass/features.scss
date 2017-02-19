@@ -1,0 +1,78 @@
+.features {
+	@include wrapper;
+}
+
+.features__wrapper {
+	margin-bottom: 40px;
+	padding: 30px 20px 5px 20px;
+	font-size: 0;
+	color: #323232;
+	background: url("../img/wafer-pattern.jpg") repeat;
+	border-radius: $border-radius;
+}
+
+.features__title {
+	margin: 0;
+	margin-bottom: 15px;
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.features__item {
+	position: relative;
+	display: inline-block;
+	width: 48.84%;
+	box-sizing: border-box;
+	padding: 15px 0;
+	padding-left: 77px;
+	font-size: 16px;
+	line-height: 22px;
+	vertical-align: top;
+	&:nth-child(even) {
+		margin-right: 2.32%;
+	}
+	&--icecream::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 50px;
+		height: 50px;
+		background-image: url("../img/features-sprite.png");
+		background-position: 0px 0px;
+	}
+	&--cow::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 50px;
+		height: 50px;
+		background-image: url("../img/features-sprite.png");
+		background-position: -59px 0px;
+	}
+	&--leaf::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 50px;
+		height: 50px;
+		background-image: url("../img/features-sprite.png");
+		background-position: -117px 0px;
+	}
+	&--thermometer::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 50px;
+		height: 50px;
+		background-image: url("../img/features-sprite.png");
+		background-position: -175px 0px;
+	}
+}
+
+.features__descr {
+	margin: 0;
+}

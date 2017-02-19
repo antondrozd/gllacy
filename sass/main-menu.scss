@@ -1,0 +1,121 @@
+.main-menu {
+	display: inline-block;
+	vertical-align: middle;
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+}
+
+.main-menu__item {
+	position: relative;
+	display: inline-block;
+	padding: 6px 14px;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 20px;
+	border-radius: 1em;
+	&::after {
+		content: "";
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 15px;
+		background: transparent;
+	}
+	a {
+		position: relative;
+		display: block;
+		text-decoration: none;
+		color: #ffffff;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+	}
+	&--active {
+		background-color: #d07058;
+		a {
+			border-bottom: none;
+		}
+	}
+	&:hover {
+		background-color: #f7f6f3;
+		a {
+			color: #333333;
+			border-bottom: none;
+		}
+		ul {
+			display: block;
+		}
+	}
+	&:active {
+		box-shadow: inset 0 2px 1px #696969;
+	}
+}
+
+.main-menu__sub-menu-news {
+	position: absolute;
+	top: 40px;
+	left: 0;
+	display: none;
+	width: 145px;
+	background-color: #f8f7f4;
+	border-radius: $border-radius;
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+	z-index: 1;
+}
+
+.main-menu__sub-menu-item {
+	&:first-child a {
+		border-top-right-radius: $border-radius;
+		border-top-left-radius: $border-radius;
+	}
+	&:last-child a {
+		border-bottom-right-radius: $border-radius;
+		border-bottom-left-radius: $border-radius;
+	}
+	&--border-bottom {
+		position: relative;
+		&::after {
+			content: "";
+			position: absolute;
+			left: 5%;
+			width: 90%;
+			border-bottom: 1px solid #d1d0ce;
+			z-index: 1;
+		}
+		a {
+			font-weight: bold;
+		}
+	}
+	a {
+		padding: 13px 20px;
+		font-size: 14px;
+		font-weight: normal;
+		line-height: 17px;
+		text-decoration: none;
+		color: #343434;
+		&:hover {
+			background-color: #fbded7;
+		}
+		&:active {
+			background-color: #f6b5a5;
+		}
+	}
+	&--active span {
+		display: block;
+		padding: 13px 20px;
+		font-size: 14px;
+		font-weight: normal;
+		line-height: 17px;
+		text-decoration: none;
+		color: #343434;
+		background-color: #d07058;
+		cursor: default;
+		&:hover {
+			background-color: #d07058;
+		}
+		&:active {
+			background-color: #d07058;
+		}
+	}
+}

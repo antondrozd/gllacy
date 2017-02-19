@@ -1,0 +1,56 @@
+@font-face {
+	font-family: "Roboto";
+	src: url("../fonts/roboto.woff") format("woff"),
+		 url("../fonts/roboto.woff2") format("woff2"),
+		 url("../fonts/robotomedium.woff") format("woff"),
+		 url("../fonts/robotomedium.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: "Highliner";
+	src: url("../fonts/highliner.woff") format("woff");
+}
+
+body {
+	font-family: $main-font;
+	> input[type="radio"] {
+		display: none;
+	}
+	&.catalog {
+		background-color: $catalog-color;
+	}
+}
+
+#slide-1:checked ~ .site-wrapper {
+	background-color: $index-color-1;
+	.slider__toggle[for="slide-1"] {
+		background-color: #ffffff;
+	}
+	.slider__item--1 {
+		display: block;
+	}
+}
+
+#slide-2:checked ~ .site-wrapper {
+	background-color: $index-color-2;
+	.slider__toggle[for="slide-2"] {
+		background-color: #ffffff;
+	}
+	.slider__item--2 {
+		display: block;
+	}
+}
+
+#slide-3:checked ~ .site-wrapper {
+	background-color: $index-color-3;
+	.slider__toggle[for="slide-3"] {
+		background-color: #ffffff;
+	}
+	.slider__item--3 {
+		display: block;
+	}
+}
+
+.site-wrapper {
+	transition: all 0.5s;
+}

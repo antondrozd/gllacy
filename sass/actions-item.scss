@@ -1,0 +1,30 @@
+.actions__item {
+	width: 48.84%;
+	min-height: 230px;
+	box-sizing: border-box;
+	margin-bottom: 40px;
+	padding: 20px;
+	color: #ffffff;
+	border-radius: $border-radius;
+	&--raspberry {
+		float: left;
+		background: url("../img/raspberry.jpg") no-repeat;
+	}
+	&--chocolate {
+		float: right;
+		background: url("../img/chocolate.jpg") no-repeat;
+	}
+}
+
+.actions__title {
+	margin: 0;
+	font-size: 35px;
+	line-height: 42px;
+}
+
+.actions__descr {
+	margin: 25px 0;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 22px;
+}
