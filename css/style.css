@@ -8,11 +8,16 @@
   src: url("../fonts/highliner.woff") format("woff"); }
 
 body {
+  margin: 0;
   font-family: "Roboto", sans-serif; }
   body > input[type="radio"] {
     display: none; }
   body.catalog {
     background-color: #849d8f; }
+
+img {
+  max-width: 100%;
+  height: auto; }
 
 #slide-1:checked ~ .site-wrapper {
   background-color: #849d8f; }
