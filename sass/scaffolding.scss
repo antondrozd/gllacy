@@ -12,6 +12,7 @@
 }
 
 body {
+  margin: 0;
 	font-family: $main-font;
 	> input[type="radio"] {
 		display: none;
@@ -20,6 +21,12 @@ body {
 		background-color: $catalog-color;
 	}
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 
 #slide-1:checked ~ .site-wrapper {
 	background-color: $index-color-1;
